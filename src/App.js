@@ -6,6 +6,7 @@ import ExerciseOne from "./components/ExerciseOne";
 import ExerciseTwo from "./components/ExerciseTwo";
 import ExerciseThere from "./components/ExerciseThere";
 import ExerciseFour from "./components/ExerciseFour";
+import ExerciseFive from "./components/ExerciseFive";
 
 function App() {
   const location = useLocation();
@@ -19,6 +20,7 @@ function App() {
           <Link to='/ExerciseTwo'>ExerciseTwo</Link><br/>
           <Link to='/ExerciseThere'>ExerciseThere</Link><br/>
           <Link to='/ExerciseFour'>ExerciseFour</Link><br/>
+          <Link to='/ExerciseFive'>ExerciseFive</Link><br/>
         </Route>
         
         <Route exact path="/ExerciseOne">
@@ -32,6 +34,9 @@ function App() {
         </Route>
         <Route exact path="/ExerciseFour">
           <ExerciseFour />
+        </Route>
+        <Route exact path="/ExerciseFive">
+          <ExerciseFive />
         </Route>
       </Switch>
 
