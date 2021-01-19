@@ -11,7 +11,7 @@ function ExerciseThere() {
       .then(res => res.json())
       .then(({data})=>{
         setResult(data[0].images.original.url)
-      })
+      })  
       .catch((e)=>{
         if (e.name === 'AbortError') {
           return console.log('request was cancelled');
@@ -19,7 +19,7 @@ function ExerciseThere() {
         console.log(e)
       })
     return () => abortController.abort()
-  })
+  },[input])
 
   const inputHandler = (e) => {
     const inputValue = e.target.value
