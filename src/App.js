@@ -1,9 +1,11 @@
 import './App.css';
 
+import ExerciseOne from "./components/ExerciseOne";
+
 function App() {
   return (
     <div className="App">
-      App
+      <ExerciseOne/>
     </div>
   );
 }
